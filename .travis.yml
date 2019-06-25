@@ -10,9 +10,9 @@ python:
 script:
   - pip install -U pip pipenv
   - pipenv install --dev
-  - pipenv run pytest --cov=arxiv --cov=announcement/announcement --cov=repository/repository --cov-report=term-missing arxiv announcement/announcement repository/repository
+  - pipenv run pytest --cov=metadata --cov-report=term-missing metadata
 after_success:
   - coveralls
-  - "./tests/lint.sh submission"
-  - "./tests/style.sh submission"
-  - "./tests/type-check.sh submission"
+  - "./tests/lint.sh metadata"
+  - "./tests/style.sh metadata"
+  - "./tests/type-check.sh metadata"
