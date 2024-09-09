@@ -1,3 +1,5 @@
+Note that this API is not currently under development. It was previously archived in 2024, and work stopped in 2019. We are currently investiating its utliity. 
+
 # arXiv Submission API service
 
 The arXiv submission API supports programmatic submission mechanisms for
